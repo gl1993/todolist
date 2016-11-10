@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" /> 
+		<title>任务计划列表</title>
+		
+		<link rel="stylesheet" href="css/index.css">
+	</head>
+	<body>
+		<header>
+			<section>
+				<form action="javascript:postaction()" id="form">
+					<!-- <label for="title">ToDoList</label> -->
+					<div class="logo">ToDoList</div>
+					<input type="text" id="title" name="title" placeholder="该做点什么呢？" required="required" autocomplete="off" />
+				</form>
+			</section>
+		</header>
+		<section>
+		<div class="lbox">
+			<h2 onclick="save()">Just Do It <span id="todocount"></span>
+			</h2>
+			<ol id="todolist" class="demo-box">
+			</ol>
+		</div>
+		<div class="rbox">
+			<h2>Im'Ok <span id="donecount"></span></h2>
+			<ul id="donelist">
+			</ul>
+		</div>
+		</section>
+		<footer>
+			<div class="dibu">Copyright &copy; 2014 todolist.cn <a href="javascript:clear();">clear</a>
+			</div>
+		</footer>
+		<script type="text/javascript" src="js/index.js"></script>
+	</body>
+</html>
